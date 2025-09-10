@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Digital Services | APEX Legal Support</title>
+  <style>
+    :root { --primary: #0b3a66; --accent: #047857; --light: #f9fafb; }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: Arial, sans-serif; background: var(--light); color: #111; }
+    .topbar { background: var(--primary); color: #fff; padding: 8px 14px; }
+    .hero { background: linear-gradient(rgba(11,58,102,0.7),rgba(11,58,102,0.7)), url('https://source.unsplash.com/1600x600/?digital,website,development') center/cover; color: #fff; text-align: center; padding: 80px 20px; }
+    .hero h1 { font-size: 36px; margin-bottom: 14px; }
+    .btn { background: var(--accent); color: #fff; padding: 12px 22px; border-radius: 6px; font-weight: bold; display: inline-block; text-decoration: none; }
+    .container { max-width: 1200px; margin: 0 auto; padding: 20px; }
+    .section { background: #fff; margin: 24px 0; padding: 30px; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+    .section h2 { color: var(--primary); margin-bottom: 15px; }
+    input, select, textarea { width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 6px; margin: 6px 0; }
+    button { background: var(--accent); color: #fff; padding: 12px; border: none; border-radius: 6px; font-weight: bold; cursor: pointer; width: 100%; margin-top: 20px; }
+    footer { background: var(--primary); color: #fff; text-align: center; padding: 16px; margin-top: 60px; }
+  </style>
+</head>
+<body>
+  <div class="topbar">
+    <div>📞 +91 98109 61385 | ✉️ apexlegalsupport@gmail.com</div>
+  </div>
+
+  <section class="hero">
+    <h1>Digital Services</h1>
+    <p>Website development and digital marketing solutions</p>
+    <a href="#form" class="btn">Go Digital</a>
+  </section>
+
+  <div class="container">
+    <section class="section">
+      <h2>Our Digital Services</h2>
+      <ul>
+        <li>Website design and development</li>
+        <li>E-commerce solutions</li>
+        <li>Digital marketing and SEO</li>
+        <li>Social media management</li>
+        <li>Mobile app development</li>
+        <li>Digital branding and graphics</li>
+      </ul>
+    </section>
+
+    <section id="form" class="section">
+      <h2>Get Digital Services</h2>
+      <form action="https://formspree.io/f/yourFormID" method="POST" style="max-width:600px;margin:0 auto">
+        <input type="hidden" name="_subject" value="Digital Services Enquiry" />
+        <input type="text" name="business_name" placeholder="Business Name" required />
+        <input type="text" name="contact_person" placeholder="Contact Person" required />
+        <input type="email" name="email" placeholder="Email" required />
+        <input type="tel" name="phone" placeholder="Phone" required />
+        <select name="service_type" required>
+          <option value="">Service Required</option>
+          <option value="Website Development">Website Development</option>
+          <option value="E-commerce">E-commerce Store</option>
+          <option value="Digital Marketing">Digital Marketing</option>
+          <option value="Mobile App">Mobile App Development</option>
+          <option value="Branding">Digital Branding</option>
+          <option value="Complete Package">Complete Digital Package</option>
+        </select>
+        <input type="text" name="current_website" placeholder="Current Website (if any)" />
+        <select name="budget" required>
+          <option value="">Budget Range</option>
+          <option value="Under 25k">Under ₹25,000</option>
+          <option value="25k-50k">₹25,000 - ₹50,000</option>
+          <option value="50k-1L">₹50,000 - ₹1,00,000</option>
+          <option value="1L-2L">₹1,00,000 - ₹2,00,000</option>
+          <option value="Above 2L">Above ₹2,00,000</option>
+        </select>
+        <textarea name="requirements" rows="4" placeholder="Describe your digital requirements and goals..." required></textarea>
+        <button type="submit">Submit Enquiry</button>
+      </form>
+    </section>
+  </div>
+
+  <footer>© <span id="year"></span> APEX LEGAL SUPPORT</footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

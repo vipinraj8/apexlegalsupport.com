@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HR Payroll Services | APEX Legal Support</title>
+  <style>:root{--primary:#0b3a66;--accent:#047857;--light:#f9fafb}*{margin:0;padding:0;box-sizing:border-box}body{font-family:Arial,sans-serif;background:var(--light);color:#111}.topbar{background:var(--primary);color:#fff;padding:8px 14px}.hero{background:linear-gradient(rgba(11,58,102,0.7),rgba(11,58,102,0.7)),url('https://source.unsplash.com/1600x600/?hr,payroll,employees') center/cover;color:#fff;text-align:center;padding:80px 20px}.hero h1{font-size:36px;margin-bottom:14px}.btn{background:var(--accent);color:#fff;padding:12px 22px;border-radius:6px;font-weight:bold;display:inline-block;text-decoration:none}.container{max-width:1200px;margin:0 auto;padding:20px}.section{background:#fff;margin:24px 0;padding:30px;border-radius:10px;box-shadow:0 4px 12px rgba(0,0,0,0.08)}.section h2{color:var(--primary);margin-bottom:15px}input,select,textarea{width:100%;padding:10px;border:1px solid #ccc;border-radius:6px;margin:6px 0}button{background:var(--accent);color:#fff;padding:12px;border:none;border-radius:6px;font-weight:bold;cursor:pointer;width:100%;margin-top:20px}footer{background:var(--primary);color:#fff;text-align:center;padding:16px;margin-top:60px}</style>
+</head>
+<body>
+  <div class="topbar">
+    <div>📞 +91 98109 61385 | ✉️ apexlegalsupport@gmail.com</div>
+  </div>
+
+  <section class="hero">
+    <h1>HR & Payroll Services</h1>
+    <p>Complete HR management and payroll processing solutions</p>
+    <a href="#form" class="btn">Get Started</a>
+  </section>
+
+  <div class="container">
+    <section class="section">
+      <h2>Our Services</h2>
+      <ul><li>Monthly payroll processing</li><li>PF, ESI, and TDS calculations</li><li>Salary slips and Form 16</li><li>Employee onboarding</li><li>Attendance management</li><li>HR compliance</li></ul>
+    </section>
+
+    <section id="form" class="section">
+      <h2>Get HR Payroll Services</h2>
+      <form action="https://formspree.io/f/yourFormID" method="POST" style="max-width:600px;margin:0 auto">
+        <input type="hidden" name="_subject" value="HR Payroll Services Enquiry" />
+        <input type="text" name="company_name" placeholder="Company Name" required />
+        <input type="text" name="contact_person" placeholder="Contact Person" required />
+        <input type="email" name="email" placeholder="Email" required />
+        <input type="tel" name="phone" placeholder="Phone" required />
+        <input type="number" name="employee_count" placeholder="Number of Employees" required />
+        <select name="service_needed" required>
+          <option value="">Service Required</option>
+          <option value="Payroll Only">Payroll Processing Only</option>
+          <option value="HR + Payroll">HR Management + Payroll</option>
+          <option value="Compliance">Compliance Support</option>
+          <option value="Full HR Outsourcing">Complete HR Outsourcing</option>
+        </select>
+        <select name="frequency" required>
+          <option value="">Payroll Frequency</option>
+          <option value="Monthly">Monthly</option>
+          <option value="Bi-weekly">Bi-weekly</option>
+          <option value="Weekly">Weekly</option>
+        </select>
+        <textarea name="requirements" rows="4" placeholder="Specific requirements and current challenges..."></textarea>
+        <button type="submit">Submit Enquiry</button>
+      </form>
+    </section>
+  </div>
+
+  <footer>© <span id="year"></span> APEX LEGAL SUPPORT</footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

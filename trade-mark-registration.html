@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Trade Mark Registration | APEX Legal Support</title>
+  <style>:root{--primary:#0b3a66;--accent:#047857;--light:#f9fafb}*{margin:0;padding:0;box-sizing:border-box}body{font-family:Arial,sans-serif;background:var(--light);color:#111}.topbar{background:var(--primary);color:#fff;padding:8px 14px}.hero{background:linear-gradient(rgba(11,58,102,0.7),rgba(11,58,102,0.7)),url('https://source.unsplash.com/1600x600/?trademark,logo,brand') center/cover;color:#fff;text-align:center;padding:80px 20px}.hero h1{font-size:36px;margin-bottom:14px}.btn{background:var(--accent);color:#fff;padding:12px 22px;border-radius:6px;font-weight:bold;display:inline-block;text-decoration:none}.container{max-width:1200px;margin:0 auto;padding:20px}.section{background:#fff;margin:24px 0;padding:30px;border-radius:10px;box-shadow:0 4px 12px rgba(0,0,0,0.08)}.section h2{color:var(--primary);margin-bottom:15px}input,select,textarea{width:100%;padding:10px;border:1px solid #ccc;border-radius:6px;margin:6px 0}button{background:var(--accent);color:#fff;padding:12px;border:none;border-radius:6px;font-weight:bold;cursor:pointer;width:100%;margin-top:20px}footer{background:var(--primary);color:#fff;text-align:center;padding:16px;margin-top:60px}</style>
+</head>
+<body>
+  <div class="topbar">
+    <div>📞 +91 98109 61385 | ✉️ apexlegalsupport@gmail.com</div>
+  </div>
+
+  <section class="hero">
+    <h1>Trade Mark Registration</h1>
+    <p>Comprehensive trademark protection services for your brand</p>
+    <a href="#form" class="btn">Protect Your Brand</a>
+  </section>
+
+  <div class="container">
+    <section class="section">
+      <h2>Trademark Registration Process</h2>
+      <ul><li>Trademark search and clearance</li><li>Application filing with IPO</li><li>Examination and objection handling</li><li>Publication and opposition period</li><li>Registration certificate issuance</li><li>10-year validity with renewal</li></ul>
+    </section>
+
+    <section class="section">
+      <h2>Why Register Your Trademark?</h2>
+      <ul><li>Exclusive legal rights to your brand</li><li>Protection against infringement</li><li>Build brand value and recognition</li><li>Licensing and franchising opportunities</li><li>Legal recourse against copycats</li><li>Pan-India protection</li></ul>
+    </section>
+
+    <section id="form" class="section">
+      <h2>Start Your Trademark Registration</h2>
+      <form action="https://formspree.io/f/yourFormID" method="POST" style="max-width:600px;margin:0 auto">
+        <input type="hidden" name="_subject" value="Trademark Registration Application" />
+        <input type="text" name="applicant_name" placeholder="Applicant Name/Company Name" required />
+        <input type="email" name="email" placeholder="Email Address" required />
+        <input type="tel" name="phone" placeholder="Phone Number" required />
+        <input type="text" name="trademark_name" placeholder="Trademark Name/Brand Name" required />
+        <select name="trademark_type" required>
+          <option value="">Select Trademark Type</option>
+          <option value="Word Mark">Word Mark (Text only)</option>
+          <option value="Logo Mark">Logo/Design Mark</option>
+          <option value="Combined Mark">Word + Logo Combined</option>
+          <option value="Sound Mark">Sound Mark</option>
+          <option value="Shape Mark">Shape/3D Mark</option>
+        </select>
+        <select name="class_category" required>
+          <option value="">Select Class Category</option>
+          <option value="Class 1-8">Class 1-8 (Chemicals, Materials)</option>
+          <option value="Class 9">Class 9 (Electronics, Software)</option>
+          <option value="Class 16">Class 16 (Paper, Printed matter)</option>
+          <option value="Class 25">Class 25 (Clothing, Footwear)</option>
+          <option value="Class 35">Class 35 (Advertising, Business)</option>
+          <option value="Class 41">Class 41 (Education, Entertainment)</option>
+          <option value="Class 42">Class 42 (Scientific, IT services)</option>
+          <option value="Multiple Classes">Multiple Classes</option>
+          <option value="Need Guidance">Need guidance on class</option>
+        </select>
+        <textarea name="goods_services" rows="3" placeholder="Describe your goods/services in detail..." required></textarea>
+        <select name="priority" required>
+          <option value="">Service Priority</option>
+          <option value="Standard">Standard Processing (45-60 days)</option>
+          <option value="Fast Track">Fast Track (30-45 days)</option>
+          <option value="Express">Express Processing (15-20 days)</option>
+        </select>
+        <textarea name="additional_info" rows="3" placeholder="Any additional information or special requirements..."></textarea>
+        <button type="submit">Submit Trademark Application</button>
+      </form>
+    </section>
+  </div>
+
+  <footer>© <span id="year"></span> APEX LEGAL SUPPORT</footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

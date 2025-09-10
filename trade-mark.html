@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Trade Mark Registration | APEX Legal Support</title>
+  <style>:root{--primary:#0b3a66;--accent:#047857;--light:#f9fafb}*{margin:0;padding:0;box-sizing:border-box}body{font-family:Arial,sans-serif;background:var(--light);color:#111;line-height:1.6}.topbar{background:var(--primary);color:#fff;padding:8px 14px}.hero{background:linear-gradient(rgba(11,58,102,0.7),rgba(11,58,102,0.7)),url('https://source.unsplash.com/1600x600/?trademark,logo,brand') center/cover;color:#fff;text-align:center;padding:80px 20px}.hero h1{font-size:36px;margin-bottom:14px}.btn{background:var(--accent);color:#fff;padding:12px 22px;border-radius:6px;font-weight:bold;display:inline-block;text-decoration:none}.container{max-width:1200px;margin:0 auto;padding:20px}.section{background:#fff;margin:24px 0;padding:30px;border-radius:10px;box-shadow:0 4px 12px rgba(0,0,0,0.08)}.section h2{color:var(--primary);margin-bottom:15px}input,select,textarea{width:100%;padding:10px;border:1px solid #ccc;border-radius:6px;margin:6px 0}button{background:var(--accent);color:#fff;padding:12px;border:none;border-radius:6px;font-weight:bold;cursor:pointer;width:100%;margin-top:20px}footer{background:var(--primary);color:#fff;text-align:center;padding:16px;margin-top:60px}</style>
+</head>
+<body>
+  <div class="topbar">
+    <div>📞 +91 98109 61385 | ✉️ apexlegalsupport@gmail.com</div>
+  </div>
+
+  <section class="hero">
+    <h1>Trade Mark Registration</h1>
+    <p>Protect your brand with trademark registration</p>
+    <a href="#form" class="btn">Apply Now</a>
+  </section>
+
+  <div class="container">
+    <section class="section">
+      <h2>Trademark Benefits</h2>
+      <ul><li>Exclusive brand protection</li><li>Legal ownership rights</li><li>Prevent unauthorized use</li><li>Build brand value</li><li>Licensing opportunities</li><li>10-year validity (renewable)</li></ul>
+    </section>
+
+    <section id="form" class="section">
+      <h2>Apply for Trademark Registration</h2>
+      <form action="https://formspree.io/f/yourFormID" method="POST" style="max-width:600px;margin:0 auto">
+        <input type="hidden" name="_subject" value="Trademark Registration Enquiry" />
+        <input type="text" name="name" placeholder="Applicant Name/Business Name" required />
+        <input type="email" name="email" placeholder="Email" required />
+        <input type="tel" name="phone" placeholder="Phone" required />
+        <input type="text" name="trademark" placeholder="Trademark Name/Logo Description" required />
+        <select name="type" required>
+          <option value="">Trademark Type</option>
+          <option value="Word Mark">Word Mark</option>
+          <option value="Logo">Logo/Device Mark</option>
+          <option value="Combined">Word + Logo</option>
+          <option value="Sound Mark">Sound Mark</option>
+        </select>
+        <select name="class" required>
+          <option value="">Product/Service Class</option>
+          <option value="1-5">Class 1-5 (Chemicals, Paints, etc.)</option>
+          <option value="9">Class 9 (Electronics, Software)</option>
+          <option value="25">Class 25 (Clothing, Footwear)</option>
+          <option value="35">Class 35 (Business Services)</option>
+          <option value="42">Class 42 (Technology Services)</option>
+          <option value="Other">Other/Multiple Classes</option>
+        </select>
+        <textarea name="description" rows="3" placeholder="Describe your products/services..."></textarea>
+        <textarea name="message" rows="3" placeholder="Additional requirements..."></textarea>
+        <button type="submit">Submit Application</button>
+      </form>
+    </section>
+  </div>
+
+  <footer>© <span id="year"></span> APEX LEGAL SUPPORT</footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

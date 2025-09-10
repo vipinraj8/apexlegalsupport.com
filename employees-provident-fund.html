@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Employees Provident Fund (EPF) | APEX Legal Support</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+  <style>
+    :root { --primary: #0b3a66; --accent: #047857; --light: #f9fafb; }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: Arial, sans-serif; background: var(--light); color: #111; line-height: 1.6; }
+    .topbar { background: var(--primary); color: #fff; font-size: 13px; padding: 8px 14px; display: flex; justify-content: space-between; flex-wrap: wrap; }
+    .topbar a { color: #fff; text-decoration: none; }
+    .hero { background: linear-gradient(rgba(11,58,102,0.7),rgba(11,58,102,0.7)), url('https://source.unsplash.com/1600x600/?finance,employees,office') center/cover no-repeat; color: #fff; text-align: center; padding: 80px 20px; }
+    .hero h1 { font-size: 36px; margin-bottom: 14px; }
+    .hero p { font-size: 18px; margin-bottom: 20px; }
+    .btn { background: var(--accent); color: #fff; padding: 12px 22px; border-radius: 6px; font-weight: bold; display: inline-block; text-decoration: none; }
+    .container { max-width: 1200px; margin: 0 auto; padding: 20px; }
+    .section { background: #fff; margin: 24px 0; padding: 30px; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+    .section h2 { color: var(--primary); margin-bottom: 15px; }
+    .form-container { max-width: 600px; margin: 0 auto; }
+    label { display: block; margin: 12px 0 6px; font-weight: bold; }
+    input, select, textarea { width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 6px; }
+    button { background: var(--accent); color: #fff; padding: 12px; border: none; border-radius: 6px; font-weight: bold; cursor: pointer; margin-top: 20px; width: 100%; }
+    .whatsapp { position: fixed; bottom: 20px; right: 20px; background: #25D366; color: #fff; padding: 12px 16px; border-radius: 50px; text-decoration: none; }
+    footer { background: var(--primary); color: #fff; text-align: center; padding: 16px; margin-top: 60px; }
+  </style>
+</head>
+<body>
+  <div class="topbar">
+    <div><i class="fa fa-phone"></i> +91 98109 61385 | +91 87450 95028 &nbsp; <i class="fa fa-envelope"></i> apexlegalsupport@gmail.com</div>
+    <div><a href="https://instagram.com/apexlegalsupport"><i class="fab fa-instagram"></i></a></div>
+  </div>
+
+  <section class="hero">
+    <h1>Employees Provident Fund (EPF)</h1>
+    <p>Complete EPF registration and compliance services for employers</p>
+    <a href="#form" class="btn">Get Started</a>
+  </section>
+
+  <div class="container">
+    <section class="section">
+      <h2>EPF Services</h2>
+      <ul>
+        <li>EPF Registration for new employers</li>
+        <li>Employee enrollment and KYC updates</li>
+        <li>Monthly ECR filing</li>
+        <li>Annual returns and compliance</li>
+        <li>PF withdrawal and transfer assistance</li>
+      </ul>
+    </section>
+
+    <section id="form" class="section">
+      <div class="form-container">
+        <h2>Apply for EPF Services</h2>
+        <form action="https://formspree.io/f/yourFormID" method="POST">
+          <input type="hidden" name="_subject" value="EPF Service Enquiry" />
+          
+          <label for="name">Company Name</label>
+          <input type="text" id="name" name="name" required />
+          
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required />
+          
+          <label for="employees">Number of Employees</label>
+          <input type="number" id="employees" name="employees" required />
+          
+          <label for="service">Service Required</label>
+          <select id="service" name="service" required>
+            <option value="">Select Service</option>
+            <option value="EPF Registration">EPF Registration</option>
+            <option value="Monthly ECR Filing">Monthly ECR Filing</option>
+            <option value="Employee Enrollment">Employee Enrollment</option>
+            <option value="Annual Compliance">Annual Compliance</option>
+          </select>
+          
+          <label for="message">Additional Details</label>
+          <textarea id="message" name="message" rows="4"></textarea>
+          
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </section>
+  </div>
+
+  <a href="https://wa.me/919810961385?text=Hello%2C%20I%20need%20EPF%20services" class="whatsapp" target="_blank">
+    <i class="fab fa-whatsapp"></i> WhatsApp
+  </a>
+
+  <footer>© <span id="year"></span> APEX LEGAL SUPPORT — All Rights Reserved</footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

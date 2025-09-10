@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Business Consulting | APEX Legal Support</title>
+  <style>
+    :root { --primary: #0b3a66; --accent: #047857; --light: #f9fafb; }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: Arial, sans-serif; background: var(--light); color: #111; }
+    .topbar { background: var(--primary); color: #fff; padding: 8px 14px; }
+    .hero { background: linear-gradient(rgba(11,58,102,0.7),rgba(11,58,102,0.7)), url('https://source.unsplash.com/1600x600/?business,consulting') center/cover; color: #fff; text-align: center; padding: 80px 20px; }
+    .hero h1 { font-size: 36px; margin-bottom: 14px; }
+    .btn { background: var(--accent); color: #fff; padding: 12px 22px; border-radius: 6px; font-weight: bold; display: inline-block; text-decoration: none; }
+    .container { max-width: 1200px; margin: 0 auto; padding: 20px; }
+    .section { background: #fff; margin: 24px 0; padding: 30px; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+    .section h2 { color: var(--primary); margin-bottom: 15px; }
+    input, select, textarea { width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 6px; margin: 6px 0; }
+    button { background: var(--accent); color: #fff; padding: 12px; border: none; border-radius: 6px; font-weight: bold; cursor: pointer; width: 100%; margin-top: 20px; }
+    footer { background: var(--primary); color: #fff; text-align: center; padding: 16px; margin-top: 60px; }
+  </style>
+</head>
+<body>
+  <div class="topbar">
+    <div>📞 +91 98109 61385 | ✉️ apexlegalsupport@gmail.com</div>
+  </div>
+
+  <section class="hero">
+    <h1>Business Consulting</h1>
+    <p>Strategic business advice and growth planning for your success</p>
+    <a href="#form" class="btn">Get Consultation</a>
+  </section>
+
+  <div class="container">
+    <section class="section">
+      <h2>Our Consulting Services</h2>
+      <ul>
+        <li>Business strategy and planning</li>
+        <li>Market research and analysis</li>
+        <li>Financial planning and forecasting</li>
+        <li>Operational efficiency improvement</li>
+        <li>Digital transformation consulting</li>
+        <li>Regulatory compliance advisory</li>
+      </ul>
+    </section>
+
+    <section id="form" class="section">
+      <h2>Get Business Consultation</h2>
+      <form action="https://formspree.io/f/yourFormID" method="POST" style="max-width:600px;margin:0 auto">
+        <input type="hidden" name="_subject" value="Business Consulting Enquiry" />
+        <input type="text" name="business_name" placeholder="Business Name" required />
+        <input type="text" name="contact_person" placeholder="Contact Person" required />
+        <input type="email" name="email" placeholder="Email" required />
+        <input type="tel" name="phone" placeholder="Phone" required />
+        <select name="business_stage" required>
+          <option value="">Business Stage</option>
+          <option value="Startup">Startup</option>
+          <option value="Growing">Growing Business</option>
+          <option value="Established">Established Business</option>
+          <option value="Expansion">Looking to Expand</option>
+        </select>
+        <select name="consulting_area" required>
+          <option value="">Consulting Area</option>
+          <option value="Strategy">Business Strategy</option>
+          <option value="Operations">Operations</option>
+          <option value="Finance">Financial Planning</option>
+          <option value="Marketing">Marketing & Sales</option>
+          <option value="Digital">Digital Transformation</option>
+          <option value="Compliance">Compliance & Legal</option>
+        </select>
+        <textarea name="challenges" rows="4" placeholder="Describe your current challenges and goals..." required></textarea>
+        <button type="submit">Submit Enquiry</button>
+      </form>
+    </section>
+  </div>
+
+  <footer>© <span id="year"></span> APEX LEGAL SUPPORT</footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

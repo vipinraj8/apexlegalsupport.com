@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Financial Planning | APEX Legal Support</title>
+  <style>
+    :root { --primary: #0b3a66; --accent: #047857; --light: #f9fafb; }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: Arial, sans-serif; background: var(--light); color: #111; }
+    .topbar { background: var(--primary); color: #fff; padding: 8px 14px; }
+    .hero { background: linear-gradient(rgba(11,58,102,0.7),rgba(11,58,102,0.7)), url('https://source.unsplash.com/1600x600/?financial,planning,investment') center/cover; color: #fff; text-align: center; padding: 80px 20px; }
+    .hero h1 { font-size: 36px; margin-bottom: 14px; }
+    .btn { background: var(--accent); color: #fff; padding: 12px 22px; border-radius: 6px; font-weight: bold; display: inline-block; text-decoration: none; }
+    .container { max-width: 1200px; margin: 0 auto; padding: 20px; }
+    .section { background: #fff; margin: 24px 0; padding: 30px; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+    .section h2 { color: var(--primary); margin-bottom: 15px; }
+    input, select, textarea { width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 6px; margin: 6px 0; }
+    button { background: var(--accent); color: #fff; padding: 12px; border: none; border-radius: 6px; font-weight: bold; cursor: pointer; width: 100%; margin-top: 20px; }
+    footer { background: var(--primary); color: #fff; text-align: center; padding: 16px; margin-top: 60px; }
+  </style>
+</head>
+<body>
+  <div class="topbar">
+    <div>📞 +91 98109 61385 | ✉️ apexlegalsupport@gmail.com</div>
+  </div>
+
+  <section class="hero">
+    <h1>Financial Planning Services</h1>
+    <p>Investment advisory and comprehensive financial planning</p>
+    <a href="#form" class="btn">Plan Your Future</a>
+  </section>
+
+  <div class="container">
+    <section class="section">
+      <h2>Our Financial Services</h2>
+      <ul>
+        <li>Investment portfolio management</li>
+        <li>Retirement planning</li>
+        <li>Tax planning and optimization</li>
+        <li>Insurance and risk management</li>
+        <li>Business financial planning</li>
+        <li>Wealth management advisory</li>
+      </ul>
+    </section>
+
+    <section id="form" class="section">
+      <h2>Get Financial Planning</h2>
+      <form action="https://formspree.io/f/yourFormID" method="POST" style="max-width:600px;margin:0 auto">
+        <input type="hidden" name="_subject" value="Financial Planning Enquiry" />
+        <input type="text" name="name" placeholder="Full Name" required />
+        <input type="email" name="email" placeholder="Email" required />
+        <input type="tel" name="phone" placeholder="Phone" required />
+        <input type="number" name="age" placeholder="Age" />
+        <select name="income_range" required>
+          <option value="">Annual Income Range</option>
+          <option value="Under 5 Lakhs">Under ₹5 Lakhs</option>
+          <option value="5-10 Lakhs">₹5-10 Lakhs</option>
+          <option value="10-25 Lakhs">₹10-25 Lakhs</option>
+          <option value="25-50 Lakhs">₹25-50 Lakhs</option>
+          <option value="Above 50 Lakhs">Above ₹50 Lakhs</option>
+        </select>
+        <select name="planning_goal" required>
+          <option value="">Primary Goal</option>
+          <option value="Retirement Planning">Retirement Planning</option>
+          <option value="Tax Saving">Tax Saving</option>
+          <option value="Wealth Creation">Wealth Creation</option>
+          <option value="Child Education">Child Education</option>
+          <option value="Business Investment">Business Investment</option>
+        </select>
+        <textarea name="financial_goals" rows="4" placeholder="Describe your financial goals and current situation..." required></textarea>
+        <button type="submit">Submit Enquiry</button>
+      </form>
+    </section>
+  </div>
+
+  <footer>© <span id="year"></span> APEX LEGAL SUPPORT</footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

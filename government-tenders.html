@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Government Tenders & Procurement | APEX Legal Support</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+  <style>
+    :root {
+      --primary: #0b3a66;
+      --accent: #047857;
+      --light: #f8f9fa;
+    }
+    
+    body {
+      background: var(--light);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    
+    .navbar {
+      background: var(--primary) !important;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    
+    .navbar-brand, .navbar-nav .nav-link {
+      color: #fff !important;
+      font-weight: 500;
+    }
+    
+    .hero {
+      background: linear-gradient(135deg, rgba(11,58,102,0.9), rgba(4,120,87,0.8)),
+                  url('https://source.unsplash.com/1600x600/?government,tender,procurement') center/cover;
+      color: #fff;
+      padding: 100px 0;
+      text-align: center;
+    }
+    
+    .hero h1 {
+      font-size: 3.5rem;
+      font-weight: 700;
+      margin-bottom: 1.5rem;
+    }
+    
+    .section-title {
+      color: var(--primary);
+      font-weight: 700;
+      margin-bottom: 3rem;
+      text-align: center;
+    }
+    
+    .service-card {
+      border: none;
+      border-radius: 15px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+      transition: all 0.3s ease;
+      height: 100%;
+    }
+    
+    .service-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+    }
+    
+    .service-icon {
+      width: 70px;
+      height: 70px;
+      background: linear-gradient(135deg, var(--accent), #059669);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 1.5rem;
+      color: #fff;
+      font-size: 1.8rem;
+    }
+    
+    .btn-primary {
+      background: var(--accent);
+      border: none;
+      padding: 12px 30px;
+      font-size: 1.1rem;
+      font-weight: 600;
+      border-radius: 50px;
+      transition: all 0.3s ease;
+    }
+    
+    .btn-primary:hover {
+      background: #059669;
+      transform: translateY(-2px);
+    }
+    
+    .feature-box {
+      background: #fff;
+      padding: 2rem;
+      border-radius: 15px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+      text-align: center;
+      height: 100%;
+    }
+    
+    .process-step {
+      background: #fff;
+      padding: 2rem;
+      border-radius: 15px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+      text-align: center;
+      position: relative;
+      margin-bottom: 2rem;
+    }
+    
+    .step-number {
+      width: 50px;
+      height: 50px;
+      background: var(--accent);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-weight: bold;
+      font-size: 1.2rem;
+      margin: 0 auto 1rem;
+    }
+    
+    .footer {
+      background: var(--primary);
+      color: #fff;
+      padding: 3rem 0 2rem;
+    }
+    
+    .contact-info {
+      background: var(--accent);
+      color: #fff;
+      padding: 1.5rem;
+      border-radius: 10px;
+      margin-bottom: 2rem;
+    }
+    
+    .whatsapp-float {
+      position: fixed;
+      width: 60px;
+      height: 60px;
+      bottom: 30px;
+      right: 30px;
+      background-color: #25d366;
+      color: #fff;
+      border-radius: 50%;
+      text-align: center;
+      font-size: 30px;
+      box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+      z-index: 1000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+    }
+    
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 2.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html"><i class="fas fa-balance-scale me-2"></i>APEX Legal Support</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#services">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#process">Process</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <h1>Government Tenders & Procurement</h1>
+      <p class="lead">Complete support for government tender bidding, eProcurement, and contract management</p>
+      <a href="#contact" class="btn btn-primary btn-lg">Get Tender Support</a>
+    </div>
+  </section>
+
+  <!-- Contact Info Bar -->
+  <div class="container my-4">
+    <div class="contact-info text-center">
+      <div class="row">
+        <div class="col-md-6">
+          <i class="fas fa-phone me-2"></i>
+          <strong>Call Us:</strong> +91 98109 61385 | +91 87450 95028
+        </div>
+        <div class="col-md-6">
+          <i class="fas fa-envelope me-2"></i>
+          <strong>Email:</strong> apexlegalsupport@gmail.com
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Services Section -->
+  <section id="services" class="py-5">
+    <div class="container">
+      <h2 class="section-title">Our Tender Services</h2>
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6">
+          <div class="card service-card">
+            <div class="card-body text-center">
+              <div class="service-icon mx-auto">
+                <i class="fas fa-search"></i>
+              </div>
+              <h5>Tender Search & Alerts</h5>
+              <p>Daily tender notifications from CPP Portal, state tenders, PSU tenders, and sector-specific opportunities</p>
+              <ul class="list-unstyled text-start mt-3">
+                <li><i class="fas fa-check text-success me-2"></i>CPP Portal monitoring</li>
+                <li><i class="fas fa-check text-success me-2"></i>State government tenders</li>
+                <li><i class="fas fa-check text-success me-2"></i>PSU & Corporate tenders</li>
+                <li><i class="fas fa-check text-success me-2"></i>Sector-wise alerts</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <div class="card service-card">
+            <div class="card-body text-center">
+              <div class="service-icon mx-auto">
+                <i class="fas fa-file-contract"></i>
+              </div>
+              <h5>Bid Preparation & Submission</h5>
+              <p>Professional bid document preparation, technical compliance, and online submission support</p>
+              <ul class="list-unstyled text-start mt-3">
+                <li><i class="fas fa-check text-success me-2"></i>Technical bid preparation</li>
+                <li><i class="fas fa-check text-success me-2"></i>Financial bid analysis</li>
+                <li><i class="fas fa-check text-success me-2"></i>Compliance documentation</li>
+                <li><i class="fas fa-check text-success me-2"></i>Online submission</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <div class="card service-card">
+            <div class="card-body text-center">
+              <div class="service-icon mx-auto">
+                <i class="fas fa-certificate"></i>
+              </div>
+              <h5>Vendor Registration</h5>
+              <p>Complete vendor registration support for government portals and empanelment processes</p>
+              <ul class="list-unstyled text-start mt-3">
+                <li><i class="fas fa-check text-success me-2"></i>GeM registration</li>
+                <li><i class="fas fa-check text-success me-2"></i>CPP Portal registration</li>
+                <li><i class="fas fa-check text-success me-2"></i>State portal registration</li>
+                <li><i class="fas fa-check text-success me-2"></i>PSU empanelment</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <div class="card service-card">
+            <div class="card-body text-center">
+              <div class="service-icon mx-auto">
+                <i class="fas fa-chart-line"></i>
+              </div>
+              <h5>Tender Analysis & Strategy</h5>
+              <p>Market analysis, competitor study, and strategic bidding recommendations</p>
+              <ul class="list-unstyled text-start mt-3">
+                <li><i class="fas fa-check text-success me-2"></i>Market research</li>
+                <li><i class="fas fa-check text-success me-2"></i>Competitor analysis</li>
+                <li><i class="fas fa-check text-success me-2"></i>Pricing strategy</li>
+                <li><i class="fas fa-check text-success me-2"></i>Risk assessment</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <div class="card service-card">
+            <div class="card-body text-center">
+              <div class="service-icon mx-auto">
+                <i class="fas fa-handshake"></i>
+              </div>
+              <h5>Contract Management</h5>
+              <p>Post-award contract management, compliance tracking, and payment facilitation</p>
+              <ul class="list-unstyled text-start mt-3">
+                <li><i class="fas fa-check text-success me-2"></i>Contract review</li>
+                <li><i class="fas fa-check text-success me-2"></i>Milestone tracking</li>
+                <li><i class="fas fa-check text-success me-2"></i>Compliance monitoring</li>
+                <li><i class="fas fa-check text-success me-2"></i>Payment support</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <div class="card service-card">
+            <div class="card-body text-center">
+              <div class="service-icon mx-auto">
+                <i class="fas fa-graduation-cap"></i>
+              </div>
+              <h5>Training & Consultation</h5>
+              <p>Tender process training, portal navigation, and business development consultation</p>
+              <ul class="list-unstyled text-start mt-3">
+                <li><i class="fas fa-check text-success me-2"></i>Tender process training</li>
+                <li><i class="fas fa-check text-success me-2"></i>Portal usage guidance</li>
+                <li><i class="fas fa-check text-success me-2"></i>Business development</li>
+                <li><i class="fas fa-check text-success me-2"></i>Success strategies</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Process Section -->
+  <section id="process" class="py-5 bg-white">
+    <div class="container">
+      <h2 class="section-title">Our Tender Support Process</h2>
+      <div class="row g-4">
+        <div class="col-lg-3 col-md-6">
+          <div class="process-step">
+            <div class="step-number">1</div>
+            <h5>Requirement Analysis</h5>
+            <p>Understanding your business capabilities, target sectors, and tender preferences</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="process-step">
+            <div class="step-number">2</div>
+            <h5>Tender Identification</h5>
+            <p>Daily monitoring and identification of relevant tender opportunities across all portals</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="process-step">
+            <div class="step-number">3</div>
+            <h5>Bid Preparation</h5>
+            <p>Complete technical and financial bid preparation with compliance documentation</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="process-step">
+            <div class="step-number">4</div>
+            <h5>Follow-up & Support</h5>
+            <p>Post-submission follow-up, clarifications, and contract management support</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="py-5">
+    <div class="container">
+      <h2 class="section-title">Why Choose Our Tender Services?</h2>
+      <div class="row g-4">
+        <div class="col-lg-3 col-md-6">
+          <div class="feature-box">
+            <i class="fas fa-clock fa-3x text-primary mb-3"></i>
+            <h5>24/7 Monitoring</h5>
+            <p>Round-the-clock tender monitoring ensures you never miss an opportunity</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="feature-box">
+            <i class="fas fa-users fa-3x text-primary mb-3"></i>
+            <h5>Expert Team</h5>
+            <p>Experienced professionals with deep knowledge of government procurement</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="feature-box">
+            <i class="fas fa-shield-alt fa-3x text-primary mb-3"></i>
+            <h5>Compliance Assured</h5>
+            <p>100% compliance with tender requirements and government regulations</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="feature-box">
+            <i class="fas fa-trophy fa-3x text-primary mb-3"></i>
+            <h5>High Success Rate</h5>
+            <p>Proven track record with high bid success rate across various sectors</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Form Section -->
+  <section id="contact" class="py-5 bg-white">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <h2 class="section-title">Get Tender Support</h2>
+          <div class="card shadow">
+            <div class="card-body p-4">
+              <form action="https://formspree.io/f/yourFormID" method="POST">
+                <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off" />
+                <input type="hidden" name="_subject" value="Government Tender Service Enquiry" />
+                
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <label for="company_name" class="form-label">Company Name *</label>
+                    <input type="text" class="form-control" id="company_name" name="company_name" required>
+                  </div>
+                  <div class="col-md-6">
+                    <label for="contact_person" class="form-label">Contact Person *</label>
+                    <input type="text" class="form-control" id="contact_person" name="contact_person" required>
+                  </div>
+                </div>
+                
+                <div class="row g-3 mt-2">
+                  <div class="col-md-6">
+                    <label for="email" class="form-label">Email Address *</label>
+                    <input type="email" class="form-control" id="email" name="email" required>
+                  </div>
+                  <div class="col-md-6">
+                    <label for="phone" class="form-label">Phone Number *</label>
+                    <input type="tel" class="form-control" id="phone" name="phone" required>
+                  </div>
+                </div>
+                
+                <div class="row g-3 mt-2">
+                  <div class="col-md-6">
+                    <label for="business_sector" class="form-label">Business Sector</label>
+                    <select class="form-select" id="business_sector" name="business_sector">
+                      <option value="">Select Sector</option>
+                      <option value="IT & Software">IT & Software</option>
+                      <option value="Construction">Construction</option>
+                      <option value="Healthcare">Healthcare</option>
+                      <option value="Education">Education</option>
+                      <option value="Transportation">Transportation</option>
+                      <option value="Manufacturing">Manufacturing</option>
+                      <option value="Consulting">Consulting</option>
+                      <option value="Other">Other</option>
+                    </select>
+                  </div>
+                  <div class="col-md-6">
+                    <label for="experience" class="form-label">Years in Business</label>
+                    <select class="form-select" id="experience" name="experience">
+                      <option value="">Select Experience</option>
+                      <option value="0-2 years">0-2 years</option>
+                      <option value="3-5 years">3-5 years</option>
+                      <option value="6-10 years">6-10 years</option>
+                      <option value="10+ years">10+ years</option>
+                    </select>
+                  </div>
+                </div>
+                
+                <div class="mt-3">
+                  <label for="service_needed" class="form-label">Service Required *</label>
+                  <select class="form-select" id="service_needed" name="service_needed" required>
+                    <option value="">Select Service</option>
+                    <option value="Tender Search & Alerts">Tender Search & Alerts</option>
+                    <option value="Bid Preparation">Bid Preparation & Submission</option>
+                    <option value="Vendor Registration">Vendor Registration</option>
+                    <option value="Complete Tender Support">Complete Tender Support</option>
+                    <option value="Training & Consultation">Training & Consultation</option>
+                  </select>
+                </div>
+                
+                <div class="mt-3">
+                  <label for="requirements" class="form-label">Specific Requirements</label>
+                  <textarea class="form-control" id="requirements" name="requirements" rows="4" 
+                           placeholder="Please describe your tender requirements, target sectors, budget range, and any specific needs..."></textarea>
+                </div>
+                
+                <div class="d-grid mt-4">
+                  <button type="submit" class="btn btn-primary btn-lg">Submit Enquiry</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4">
+          <h5><i class="fas fa-balance-scale me-2"></i>APEX Legal Support</h5>
+          <p>Your trusted partner for government tenders and business procurement solutions. We help businesses succeed in government contracts.</p>
+        </div>
+        <div class="col-lg-4">
+          <h5>Quick Links</h5>
+          <ul class="list-unstyled">
+            <li><a href="index.html" class="text-white-50">Home</a></li>
+            <li><a href="company-registration.html" class="text-white-50">Company Registration</a></li>
+            <li><a href="gst-registration.html" class="text-white-50">GST Registration</a></li>
+            <li><a href="gem-registration.html" class="text-white-50">GeM Registration</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-4">
+          <h5>Contact Information</h5>
+          <div class="mb-3">
+            <i class="fas fa-phone me-2"></i>
+            <a href="tel:+919810961385" class="text-white-50">+91 98109 61385</a><br>
+            <i class="fas fa-phone me-2"></i>
+            <a href="tel:+918745095028" class="text-white-50">+91 87450 95028</a>
+          </div>
+          <div class="mb-3">
+            <i class="fas fa-envelope me-2"></i>
+            <a href="mailto:apexlegalsupport@gmail.com" class="text-white-50">apexlegalsupport@gmail.com</a>
+          </div>
+        </div>
+      </div>
+      <hr class="mt-4">
+      <div class="text-center">
+        <p>&copy; <span id="currentYear"></span> APEX Legal Support. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp Float Button -->
+  <a href="https://wa.me/919810961385?text=Hello%20APEX%20Legal%20Support%2C%20I%20need%20help%20with%20Government%20Tenders." 
+     class="whatsapp-float" target="_blank" title="Chat on WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    document.getElementById('currentYear').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

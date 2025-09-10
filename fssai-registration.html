@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FSSAI Registration | APEX Legal Support</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+  <style>
+    :root { --primary: #0b3a66; --accent: #047857; --light: #f9fafb; }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: Arial, sans-serif; background: var(--light); color: #111; line-height: 1.6; }
+    .topbar { background: var(--primary); color: #fff; font-size: 13px; padding: 8px 14px; display: flex; justify-content: space-between; }
+    .topbar a { color: #fff; text-decoration: none; }
+    .hero { background: linear-gradient(rgba(11,58,102,0.7),rgba(11,58,102,0.7)), url('https://source.unsplash.com/1600x600/?food,restaurant,kitchen') center/cover no-repeat; color: #fff; text-align: center; padding: 80px 20px; }
+    .hero h1 { font-size: 36px; margin-bottom: 14px; }
+    .btn { background: var(--accent); color: #fff; padding: 12px 22px; border-radius: 6px; font-weight: bold; display: inline-block; text-decoration: none; }
+    .container { max-width: 1200px; margin: 0 auto; padding: 20px; }
+    .section { background: #fff; margin: 24px 0; padding: 30px; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+    .section h2 { color: var(--primary); margin-bottom: 15px; }
+    label { display: block; margin: 12px 0 6px; font-weight: bold; }
+    input, select, textarea { width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 6px; }
+    button { background: var(--accent); color: #fff; padding: 12px; border: none; border-radius: 6px; font-weight: bold; cursor: pointer; margin-top: 20px; width: 100%; }
+    footer { background: var(--primary); color: #fff; text-align: center; padding: 16px; margin-top: 60px; }
+  </style>
+</head>
+<body>
+  <div class="topbar">
+    <div><i class="fa fa-phone"></i> +91 98109 61385 | +91 87450 95028 &nbsp; <i class="fa fa-envelope"></i> apexlegalsupport@gmail.com</div>
+    <div><a href="https://instagram.com/apexlegalsupport"><i class="fab fa-instagram"></i></a></div>
+  </div>
+
+  <section class="hero">
+    <h1>FSSAI Registration</h1>
+    <p>Get your Food License for restaurants, cloud kitchens, and food businesses</p>
+    <a href="#form" class="btn">Apply Now</a>
+  </section>
+
+  <div class="container">
+    <section class="section">
+      <h2>FSSAI License Types</h2>
+      <ul>
+        <li><strong>Basic Registration:</strong> Turnover up to ₹12 lakhs</li>
+        <li><strong>State License:</strong> Turnover ₹12 lakhs - ₹20 crores</li>
+        <li><strong>Central License:</strong> Turnover above ₹20 crores or specific categories</li>
+      </ul>
+    </section>
+
+    <section class="section">
+      <h2>Documents Required</h2>
+      <ul>
+        <li>Business registration certificate</li>
+        <li>PAN card and address proof</li>
+        <li>Premises proof and NOC</li>
+        <li>Food safety management system plan</li>
+        <li>Water test report</li>
+        <li>Product list and manufacturing process</li>
+      </ul>
+    </section>
+
+    <section id="form" class="section">
+      <h2>Apply for FSSAI Registration</h2>
+      <form action="https://formspree.io/f/yourFormID" method="POST" style="max-width: 600px; margin: 0 auto;">
+        <input type="hidden" name="_subject" value="FSSAI Registration Enquiry" />
+        
+        <label for="name">Business Name</label>
+        <input type="text" id="name" name="name" required />
+        
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required />
+        
+        <label for="phone">Phone</label>
+        <input type="tel" id="phone" name="phone" required />
+        
+        <label for="type">Business Type</label>
+        <select id="type" name="type" required>
+          <option value="">Select Type</option>
+          <option value="Restaurant">Restaurant</option>
+          <option value="Cloud Kitchen">Cloud Kitchen</option>
+          <option value="Food Manufacturing">Food Manufacturing</option>
+          <option value="Food Trading">Food Trading</option>
+          <option value="Other">Other</option>
+        </select>
+        
+        <label for="turnover">Annual Turnover</label>
+        <select id="turnover" name="turnover" required>
+          <option value="">Select Range</option>
+          <option value="Under 12 Lakhs">Under ₹12 Lakhs</option>
+          <option value="12 Lakhs - 20 Crores">₹12 Lakhs - ₹20 Crores</option>
+          <option value="Above 20 Crores">Above ₹20 Crores</option>
+        </select>
+        
+        <label for="message">Additional Details</label>
+        <textarea id="message" name="message" rows="4" placeholder="Tell us about your food business..."></textarea>
+        
+        <button type="submit">Submit Application</button>
+      </form>
+    </section>
+  </div>
+
+  <footer>© <span id="year"></span> APEX LEGAL SUPPORT — All Rights Reserved</footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

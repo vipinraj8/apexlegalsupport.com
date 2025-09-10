@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Employee State Registration | APEX Legal Support</title>
+  <meta name="description" content="Complete assistance for state-specific employee registrations including Shops & Establishments and Professional Tax." />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+  <style>
+    :root { --primary: #0b3a66; --accent: #047857; --light: #f9fafb; }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: Arial, sans-serif; background: var(--light); color: #111; line-height: 1.6; }
+    .topbar { background: var(--primary); color: #fff; font-size: 13px; padding: 8px 14px; display: flex; justify-content: space-between; flex-wrap: wrap; }
+    .topbar a { color: #fff; text-decoration: none; }
+    .hero { background: linear-gradient(rgba(11,58,102,0.7),rgba(11,58,102,0.7)), url('https://source.unsplash.com/1600x600/?office,workplace,employees') center/cover no-repeat; color: #fff; text-align: center; padding: 80px 20px; }
+    .hero h1 { font-size: 36px; margin-bottom: 14px; }
+    .hero p { font-size: 18px; margin-bottom: 20px; max-width: 800px; margin-left: auto; margin-right: auto; }
+    .btn { background: var(--accent); color: #fff; padding: 12px 22px; border-radius: 6px; font-weight: bold; display: inline-block; text-decoration: none; }
+    .container { max-width: 1200px; margin: 0 auto; padding: 20px; }
+    .section { background: #fff; margin: 24px 0; padding: 30px; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+    .section h2 { color: var(--primary); margin-bottom: 15px; font-size: 24px; }
+    .section ul { margin: 15px 0 0 20px; }
+    .section li { margin-bottom: 8px; }
+    .form-container { max-width: 600px; margin: 0 auto; }
+    label { display: block; margin: 12px 0 6px; font-weight: bold; }
+    input, select, textarea { width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 6px; font-size: 14px; }
+    textarea { resize: vertical; min-height: 100px; }
+    button { background: var(--accent); color: #fff; padding: 12px; border: none; border-radius: 6px; font-size: 16px; font-weight: bold; cursor: pointer; margin-top: 20px; width: 100%; }
+    button:hover { background: #059669; }
+    .whatsapp { position: fixed; bottom: 20px; right: 20px; background: #25D366; color: #fff; padding: 12px 16px; border-radius: 50px; font-size: 16px; font-weight: bold; box-shadow: 0 4px 12px rgba(0,0,0,0.2); display: flex; align-items: center; gap: 8px; text-decoration: none; }
+    footer { background: var(--primary); color: #fff; text-align: center; padding: 16px; font-size: 13px; margin-top: 60px; }
+    @media(max-width: 768px) { .hero h1 { font-size: 28px; } .hero p { font-size: 16px; } .container { padding: 15px; } }
+  </style>
+</head>
+<body>
+  <div class="topbar">
+    <div><i class="fa fa-phone"></i> +91 98109 61385 | +91 87450 95028 &nbsp; <i class="fa fa-envelope"></i> apexlegalsupport@gmail.com</div>
+    <div><a href="https://instagram.com/apexlegalsupport"><i class="fab fa-instagram"></i></a> <a href="#"><i class="fab fa-facebook"></i></a> <a href="#"><i class="fab fa-x-twitter"></i></a></div>
+  </div>
+
+  <section class="hero">
+    <h1>Employee State Registrations</h1>
+    <p>Complete support for all state-specific employee registrations including Shops & Establishments Act, Professional Tax, and other labour compliance requirements.</p>
+    <a href="#form" class="btn">Get Started</a>
+  </section>
+
+  <div class="container">
+    <section class="section">
+      <h2>Services Covered</h2>
+      <ul>
+        <li>Shops & Establishments Act Registration</li>
+        <li>Professional Tax Registration</li>
+        <li>Contract Labour License</li>
+        <li>Factories Act Registration</li>
+        <li>State Labour Licenses</li>
+        <li>Trade License</li>
+      </ul>
+    </section>
+
+    <section class="section">
+      <h2>Documents Required</h2>
+      <ul>
+        <li>Business registration documents (Company/LLP/Partnership)</li>
+        <li>PAN card and address proof of business</li>
+        <li>Lease deed or ownership documents of premises</li>
+        <li>Details of employees with joining dates</li>
+        <li>Authorized signatory ID and address proof</li>
+        <li>Bank account details and cancelled cheque</li>
+      </ul>
+    </section>
+
+    <section id="form" class="section">
+      <div class="form-container">
+        <h2>Apply for State Registration</h2>
+        <form action="https://formspree.io/f/yourFormID" method="POST">
+          <input type="text" name="_gotcha" style="display:none" />
+          <input type="hidden" name="_subject" value="Employee State Registration Enquiry" />
+          
+          <label for="name">Business Name</label>
+          <input type="text" id="name" name="name" required />
+          
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" required />
+          
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" name="phone" required />
+          
+          <label for="state">State</label>
+          <select id="state" name="state" required>
+            <option value="">- Select State -</option>
+            <option value="Delhi">Delhi</option>
+            <option value="Maharashtra">Maharashtra</option>
+            <option value="Gujarat">Gujarat</option>
+            <option value="Karnataka">Karnataka</option>
+            <option value="Tamil Nadu">Tamil Nadu</option>
+            <option value="Other">Other</option>
+          </select>
+          
+          <label for="employees">Number of Employees</label>
+          <input type="number" id="employees" name="employees" min="1" required />
+          
+          <label for="service">Registration Type</label>
+          <select id="service" name="service" required>
+            <option value="">- Select Service -</option>
+            <option value="Shops & Establishments">Shops & Establishments</option>
+            <option value="Professional Tax">Professional Tax</option>
+            <option value="Contract Labour">Contract Labour License</option>
+            <option value="Multiple">Multiple Registrations</option>
+          </select>
+          
+          <label for="message">Additional Requirements</label>
+          <textarea id="message" name="message" placeholder="Describe your business and specific requirements..."></textarea>
+          
+          <button type="submit">Submit Application</button>
+        </form>
+      </div>
+    </section>
+  </div>
+
+  <a href="https://wa.me/919810961385?text=Hello%20APEX%20Legal%20Support%2C%20I%20need%20help%20with%20Employee%20State%20Registration." class="whatsapp" target="_blank">
+    <i class="fab fa-whatsapp"></i> Chat on WhatsApp
+  </a>
+
+  <footer>© <span id="year"></span> APEX LEGAL SUPPORT — All Rights Reserved</footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

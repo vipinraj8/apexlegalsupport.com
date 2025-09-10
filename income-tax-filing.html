@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Income Tax Filing | APEX Legal Support</title>
+  <style>:root{--primary:#0b3a66;--accent:#047857;--light:#f9fafb}*{margin:0;padding:0;box-sizing:border-box}body{font-family:Arial,sans-serif;background:var(--light);color:#111}.topbar{background:var(--primary);color:#fff;padding:8px 14px}.hero{background:linear-gradient(rgba(11,58,102,0.7),rgba(11,58,102,0.7)),url('https://source.unsplash.com/1600x600/?tax,filing,income') center/cover;color:#fff;text-align:center;padding:80px 20px}.hero h1{font-size:36px;margin-bottom:14px}.btn{background:var(--accent);color:#fff;padding:12px 22px;border-radius:6px;font-weight:bold;display:inline-block;text-decoration:none}.container{max-width:1200px;margin:0 auto;padding:20px}.section{background:#fff;margin:24px 0;padding:30px;border-radius:10px;box-shadow:0 4px 12px rgba(0,0,0,0.08)}.section h2{color:var(--primary);margin-bottom:15px}input,select,textarea{width:100%;padding:10px;border:1px solid #ccc;border-radius:6px;margin:6px 0}button{background:var(--accent);color:#fff;padding:12px;border:none;border-radius:6px;font-weight:bold;cursor:pointer;width:100%;margin-top:20px}footer{background:var(--primary);color:#fff;text-align:center;padding:16px;margin-top:60px}</style>
+</head>
+<body>
+  <div class="topbar">
+    <div>📞 +91 98109 61385 | ✉️ apexlegalsupport@gmail.com</div>
+  </div>
+
+  <section class="hero">
+    <h1>Income Tax Filing</h1>
+    <p>Professional ITR filing services for individuals and businesses</p>
+    <a href="#form" class="btn">File ITR</a>
+  </section>
+
+  <div class="container">
+    <section class="section">
+      <h2>ITR Forms We Handle</h2>
+      <ul><li><b>ITR-1:</b> Salary, pension, one house property</li><li><b>ITR-2:</b> Capital gains, multiple properties</li><li><b>ITR-3:</b> Business/profession income</li><li><b>ITR-4:</b> Presumptive taxation</li><li>Tax planning and optimization</li></ul>
+    </section>
+
+    <section id="form" class="section">
+      <h2>File Your Income Tax Return</h2>
+      <form action="https://formspree.io/f/yourFormID" method="POST" style="max-width:600px;margin:0 auto">
+        <input type="hidden" name="_subject" value="Income Tax Filing Enquiry" />
+        <input type="text" name="name" placeholder="Full Name" required />
+        <input type="email" name="email" placeholder="Email" required />
+        <input type="tel" name="phone" placeholder="Phone" required />
+        <input type="text" name="pan" placeholder="PAN Number" required />
+        <select name="assessment_year" required>
+          <option value="">Assessment Year</option>
+          <option value="2024-25">2024-25 (FY 2023-24)</option>
+          <option value="2025-26">2025-26 (FY 2024-25)</option>
+          <option value="Previous Years">Previous Years</option>
+        </select>
+        <select name="itr_type" required>
+          <option value="">Income Type</option>
+          <option value="Salary Only">Salary Only</option>
+          <option value="Business/Professional">Business/Professional</option>
+          <option value="Capital Gains">Capital Gains</option>
+          <option value="Multiple Sources">Multiple Income Sources</option>
+        </select>
+        <input type="number" name="annual_income" placeholder="Annual Income (in lakhs)" />
+        <textarea name="special_circumstances" rows="3" placeholder="Any special circumstances or deductions..."></textarea>
+        <button type="submit">Submit for ITR Filing</button>
+      </form>
+    </section>
+  </div>
+
+  <footer>© <span id="year"></span> APEX LEGAL SUPPORT</footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
